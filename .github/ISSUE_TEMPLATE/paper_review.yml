@@ -8,7 +8,8 @@ body:
       label: 📄 Paper Source
       description: Paste the paper link (arXiv, PDF, or DOI)
       placeholder: "https://arxiv.org/abs/..."
-      
+    validations:
+      required: true
 
   - type: markdown
     attributes:
@@ -24,8 +25,7 @@ body:
       label: 📝 Summary
       description: High-level summary and the main contribution
       placeholder: "What is the paper about, and why is it important?"
-    validations:
-      required: true
+
 
   - type: textarea
     id: key-problem
