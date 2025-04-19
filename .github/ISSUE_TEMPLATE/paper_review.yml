@@ -1,0 +1,82 @@
+name: 📚 ML Paper Review
+description: Template for reviewing papers in ML theory and optimization
+title: "[Paper] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 📄 Paper Source
+      description: Paste the paper link (arXiv, PDF, or DOI)
+      placeholder: "https://arxiv.org/abs/..."
+      
+
+  - type: markdown
+    attributes:
+      value: |
+        **📌 Label suggestion:** After submitting, manually add labels such as:
+        - topics: `optimization`, `generalization`, `online-learning`, etc.
+        - venues: `ICML`, `NeurIPS`, etc.
+        - status: `read`, `to-read`, `revisit`, etc.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📝 Summary
+      description: High-level summary and the main contribution
+      placeholder: "What is the paper about, and why is it important?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-problem
+    attributes:
+      label: ❓ Key Problem
+      description: What question or gap is this paper addressing?
+
+  - type: textarea
+    id: problem-setting
+    attributes:
+      label: 🧩 Problem Setting
+      description: Formal setup — e.g., optimization problem, assumptions, learning model
+
+  - type: textarea
+    id: main-ideas
+    attributes:
+      label: 💡 Main Ideas and Insights
+      description: What are the key ideas, tricks, or conceptual contributions?
+
+  - type: textarea
+    id: theoretical-results
+    attributes:
+      label: 📐 Theoretical Guarantees
+      description: Theorems, bounds, convergence rates, etc. What do we know?
+
+  - type: textarea
+    id: proof-sketch
+    attributes:
+      label: 🔍 Proof Highlights (Optional)
+      description: Intuition or key steps in the analysis
+
+  - type: textarea
+    id: limitations
+    attributes:
+      label: ⚠️ Assumptions & Limitations
+      description: When do the results hold? Are the assumptions realistic?
+
+  - type: textarea
+    id: related
+    attributes:
+      label: 🔗 Related Work & Connections
+      description: Theoretical links, improvements, or differences from past work
+
+  - type: textarea
+    id: experiments
+    attributes:
+      label: 📊 Empirical Results (Optional)
+      description: If included — what's the setup and what do results show?
+
+  - type: textarea
+    id: follow-up
+    attributes:
+      label: 🧠 Follow-Up Research Ideas (Optional)
+      description: How would you build on this work? Any generalizations, applications, or sharper results?
